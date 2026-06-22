@@ -1,0 +1,10 @@
+# Data is downloaded automatically by the notebooks
+data/
+
+# Jupyter / Python caches
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Local tooling
+.claude/
