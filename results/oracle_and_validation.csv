@@ -1,0 +1,11 @@
+metric,value
+oracle_model,logistic_regression
+oracle_features,4128
+oracle_AUC_heldout,0.9727
+oracle_size_int8_KB,4.0
+random_key_ablation_AUC,0.540
+validation_design,Sandwiched @ target 1e-03
+validation_false_negatives,0
+validation_heldout_test_FPR,0.0005
+validation_backup_members,23725
+validation_total_members,73367

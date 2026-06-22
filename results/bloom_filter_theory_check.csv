@@ -1,0 +1,5 @@
+bits_per_key,k,empirical_FPR,theoretical_FPR,false_negatives
+6,4,0.0573,0.0561,0
+8,6,0.0228,0.0216,0
+10,7,0.0090,0.0082,0
+12,8,0.0032,0.0031,0
