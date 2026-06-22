@@ -9,7 +9,7 @@ that you can make it even smaller by putting a small machine-learning model in f
 wanted to find out whether that actually holds up when you count the model's own size honestly,
 or whether it's the kind of result that only looks good if you ignore the fine print.
 
-So this project builds a normal Bloom filter and three "learned" versions from scratch, runs them
+So in this project I have built a normal Bloom filter and three "learned" versions from scratch, runs them
 on a real blocklist of malicious URLs, and measures who actually wins.
 
 ## Why bother (the problem)
