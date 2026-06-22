@@ -87,7 +87,7 @@ flip) and the partitioned filter became 2–6% *worse* than a plain Bloom filter
 coming from the structure in real URLs; strip that out and the model is just dead weight. This was
 the experiment I trusted most, because it could have killed the result.
 
-## Limitations / what I'd do next
+## Limitations
 
 I'd rather state these up front than pretend they aren't there:
 
