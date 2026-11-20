@@ -1,6 +1,10 @@
 # Learned Bloom Filters for Memory-Efficient Set Membership
 
-CS328 (Data Science) project, IIT Gandhinagar.
+CS328 (Data Science) course project under Prof. Anirban Dasgupta, IIT Gandhinagar.
+
+**Update, Nov 2026:** I'm now extending this to payments with Heet Panchal, as MuleSieve: screening
+a payee against flagged mule accounts at payment time without exposing the list. Design note in
+[`mulesieve/DESIGN.md`](mulesieve/DESIGN.md).
 
 A Bloom filter is one of those data structures that feels like cheating: it tells you whether
 something is in a set using a tiny fraction of the memory it would take to actually store the set,
@@ -9,8 +13,8 @@ that you can make it even smaller by putting a small machine-learning model in f
 wanted to find out whether that actually holds up when you count the model's own size honestly,
 or whether it's the kind of result that only looks good if you ignore the fine print.
 
-So in this project I have built a normal Bloom filter and three "learned" versions from scratch, runs them
-on a real blocklist of malicious URLs, and measures who actually wins.
+So in this project I built a normal Bloom filter and three "learned" versions from scratch, ran them
+on a real blocklist of malicious URLs, and measured who actually wins.
 
 ## Why bother (the problem)
 
@@ -119,7 +123,7 @@ download the dataset themselves on first run):
 03_learned_oracle.ipynb         features, oracle training, AUC, score separation
 04_learned_filters.ipynb        LBF / Sandwiched / PLBF + the real zero-FN/FPR check
 05_results_and_ablation.ipynb   combined frontier + the random-key ablation
-PROJECT_EXPLAINED.md            long-form write-up with the math and a Q&A
+mulesieve/DESIGN.md             design note for the payments extension (in progress)
 figures/  results/              exported plots and CSVs
 ```
 
